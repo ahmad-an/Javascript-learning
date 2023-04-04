@@ -8,6 +8,7 @@ function createArray() {
         myArry.push(i);
         // document.write(myArry[i]);
         document.getElementById("p1").innerHTML = myArry;
+        
     }
 }
 
