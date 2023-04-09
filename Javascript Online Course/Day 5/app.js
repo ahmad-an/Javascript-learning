@@ -129,7 +129,19 @@
         console.log("Array after deletion : " + months) // view array after deletion; October is deleted from start;
         console.log("Array length after deletion : " + months.length); // view lenght of array to varifiy deletion;
 
-        
+        // removing multiple values from array using shift;
+
+            months.shift(0,1,2);                    // passing multiple argument has no effect;
+            console.log(months);                    // deleted only one item at start;
+            console.log(months.length);             // view lenght of array;
+
+            months.shift();                         // to delete multiple items from array, call shift method as many times as requird;
+            months.shift();
+            console.log("Array lenth after calling shift twice : " + months.length ); // array lenght after calling shift twice;
+
+        // Conclusion: Shift only delete value at start index.
+        // For deleting multiple values, call shift as many times as required;
+
 
 
     
