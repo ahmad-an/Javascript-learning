@@ -94,8 +94,31 @@
         console.log(months);                        // to varify result, view full array;
         console.log(months.length);                 // to varify result, check the lenght of array;
 
-        // conculsion: removing data by index number does not delete data by assign either empty or undefined which ever is assigned;
-        // this method doesnot reduce array length, therefore, not recommended
+        // conculsion: removing data by index number does not delete data, Neither by assigning empty nor by assigning undefined;
+        // this method doesnot reduce array length, therefore, not recommended;
+
+    // Removing data from array by pop method;
+
+        console.log(months);                        // first view array in console;
+        // result: ['October', 'November', 'December', 'September', 'January', 'February', 'March', 'April', 'May', 'Jun', 'July', undefined];
+
+        months.pop();                               // pop method delete data from array at last index, in this case undefined;
+        console.log(months);                        // varify deletion by pop method;
+        // result: ['October', 'November', 'December', 'September', 'January', 'February', 'March', 'April', 'May', 'Jun', 'July'];
+        // undefined is removed from last;
+
+        // Deleting multiple values in single pop;
+        console.log("Value at index 10: " + months[10]);    // view value at index 10; result: July
+        console.log("Array lenght before deletion: " + months.length);   // view lenght of array before deletion;
+        months.pop(10);                                     // delete value at index 10 by pop;
+        console.log(months);                                // varify deletion; July deleted from array;
+        console.log("Array length after deletion: " + months.length); // array length after deletion;
+        months.pop(7, 8, 9);                                // passing multiple arugments in pop for deleting index 7, 8 and 9;
+        console.log(months);                                // deleted value only at last index;
+        console.log(months.length);                         // view array length after deletion;
+
+        //  Conclusion: Pop only delete value at last index. 
+        //  For deleting multiple values call pop as many times as required
 
 
     
