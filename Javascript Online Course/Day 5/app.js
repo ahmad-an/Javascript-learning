@@ -121,4 +121,15 @@
         //  For deleting multiple values call pop as many times as required
 
 
+    // Removing data from array by shift metho;
+
+        console.log("Array before deleting by shift : " + months);       // view array before deleting;
+        console.log("Array length before deletion : " + months.length);  // array length before deletion;       
+        months.shift();                             // shift method remove data from array at start;
+        console.log("Array after deletion : " + months) // view array after deletion; October is deleted from start;
+        console.log("Array length after deletion : " + months.length); // view lenght of array to varifiy deletion;
+
+        
+
+
     
