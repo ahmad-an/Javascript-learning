@@ -2,20 +2,45 @@
 // Array is used to store multiple values of same types in a single variable
 // Javascript allows to store values of different types in same array but it is not recommended to do so
 
-let years = [];                               // declaring and iniatilizing empty array;
-let months = ["January", "February", "March"]; // declaring and iniatilizing array with values;
+// Array can be declared by using two methods; Variable Method, Object Method
 
-// to view array in console
-console.log(months);
+// Array by Variable Method;
+
+        let years = [];                                // declaring and iniatilizing empty array;
+        let months = ["January", "February", "March"]; // declaring and iniatilizing array with values;
+
+    // View array in console
+        console.log(months);
+
+        console.log(months[0]);                        // Arrays store values in index starting from 0 (zero) index 
+        console.log(months[2]);                        // To view value of array at index 2;  Result: March
+
+    // To view value of array at index which is not available in array will result: Undefined
+        console.log(months[12]);
+    
+    
+// Array by Object Method;
+
+        let myArray = new Array();                                  // empty Array by using object method;
+
+        console.log("Empty array by Object method: " + myArray);    // view array in console;
+        console.log("Empty Array Lenght : " + myArray.length);      // Varify length of empty; Zero length;
+        console.log(myArray);                                       // Array is declared by empty; Zero Lenth;
+
+        let myNewArray = new Array("Adil", "Ahmad", "Tahir");       // Array with values by object method;
+        console.log(myNewArray);                                    // view array in console;
+
+    // Problem using Object Method;
+        let myNumArray = new Array(5);        // declared array with one number value i.e. 5;
+        console.log(myNumArray);              // view array in console; result: [empty × 5];
+        console.log("Number Array by Object Method : " + myNumArray);    // view array with one value i.e. 5;
+        console.log("Number Array Lenth: " + myNumArray.length);       // View length of array;
+        
+        // conclusion: When declare array by object method with single number value; it treat the value as array lenth instead of value;
+
+        // to view array values by index
 
 
-// to view array values by index
-
-console.log(months[0]);                        // Arrays store values in index starting from 0 (zero) index 
-console.log(months[2]);                        // To view value of array at index 2;  Result: March
-
-// To view value of array at index which is not available in array will result: Undefined
-console.log(months[12]);
 
 
 // Adding Values in Array;
@@ -61,16 +86,16 @@ console.log(months[12]);
 
     // Removing data from array by index number;
 
-    console.log("Data at index number 11 : " + months[11]);     // view data at index num 11;
-    months[11] = [];                            // assign empty value at index 11;
-    console.log(months[11]);                    // to varify result, view data at index number 11;
-    months[11] = undefined;                     // removing data at index number 11 by assigning undefined;
-    console.log(months[11]);                    // to varify result, view data at index number 11;
-    console.log(months);                        // to varify result, view full array;
-    console.log(months.length);                 // to varify result, check the lenght of array;
+        console.log("Data at index number 11 : " + months[11]);     // view data at index num 11;
+        months[11] = [];                            // assign empty value at index 11;
+        console.log(months[11]);                    // to varify result, view data at index number 11;
+        months[11] = undefined;                     // removing data at index number 11 by assigning undefined;
+        console.log(months[11]);                    // to varify result, view data at index number 11;
+        console.log(months);                        // to varify result, view full array;
+        console.log(months.length);                 // to varify result, check the lenght of array;
 
-    // conculsion: removing data by index number does not delete data by assign either empty or undefined which ever is assigned;
-    // this method doesnot reduce array length, therefore, not recommended
-    
+        // conculsion: removing data by index number does not delete data by assign either empty or undefined which ever is assigned;
+        // this method doesnot reduce array length, therefore, not recommended
+
 
     
