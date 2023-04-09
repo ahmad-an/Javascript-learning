@@ -12,12 +12,16 @@
     // View array in console
         console.log(months);
 
+    // to view array values by index
         console.log(months[0]);                        // Arrays store values in index starting from 0 (zero) index 
         console.log(months[2]);                        // To view value of array at index 2;  Result: March
 
     // To view value of array at index which is not available in array will result: Undefined
         console.log(months[12]);
-    
+
+    // View array length
+        console.log("Array lenght: " + months.length);  // Array lenght start from 1 and goes onward
+
     
 // Array by Object Method;
 
@@ -37,10 +41,6 @@
         console.log("Number Array Lenth: " + myNumArray.length);       // View length of array;
         
         // conclusion: When declare array by object method with single number value; it treat the value as array lenth instead of value;
-
-        // to view array values by index
-
-
 
 
 // Adding Values in Array;
@@ -66,7 +66,7 @@
         console.log(months[6]);
         console.log(months[7]);
 
-    // Adding data in array by using unshift metho
+    // Adding data in array by using unshift method;
 
         months.unshift("September");            // unshift method add data in existing array at the start of array at index 0,
         console.log(months);                    // varify the data added by unshift;
