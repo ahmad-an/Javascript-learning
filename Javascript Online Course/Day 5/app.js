@@ -30,3 +30,9 @@ months.push("May");     // Push method add data in array at the end after last i
 console.log(months);    // varify result;
 console.log(months[4]); // variey result by index number i.e. 4 in this case;
 
+// multiple values can also be added through single push method;
+months.push("Jun", "July", "August");   // adding multiple values in single push;
+console.log(months);                    // varify multiple value added via single push;
+console.log(months[5]);                 // varify by index number
+console.log(months[6]);
+console.log(months[7]);
