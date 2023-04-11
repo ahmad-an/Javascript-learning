@@ -117,7 +117,8 @@
         console.log(months);                                // deleted value only at last index;
         console.log(months.length);                         // view array length after deletion;
 
-        //  Conclusion: Pop only delete value at last index. 
+        //  Conclusion: 
+        //  Pop method belongs to que data structure i.e. LIFO (Last In First Out) therefore, at one time, Pop only delete one value at last index. 
         //  For deleting multiple values call pop as many times as required
 
 
@@ -139,8 +140,9 @@
             months.shift();
             console.log("Array lenth after calling shift twice : " + months.length ); // array lenght after calling shift twice;
 
-        // Conclusion: Shift only delete value at start index.
-        // For deleting multiple values, call shift as many times as required;
+        //  Conclusion: 
+        //  Shift Method belongs to que data structure i.e. FIFO (First In First Out), therefore, at one time, Shift only delete one value at start index.
+        //  For deleting multiple values, call shift as many times as required;
 
 
 
